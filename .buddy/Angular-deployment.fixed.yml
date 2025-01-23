@@ -1,0 +1,6 @@
+- pipeline: "Angular-deployment"
+  events:
+  - type: "PUSH"
+    refs:
+    - "refs/heads/deployment"
+  fail_on_prepare_env_warning: true
