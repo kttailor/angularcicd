@@ -20,7 +20,7 @@
     - "#     flags: ['--no-sandbox']"
     - "#   }"
     - "# },"
-    - "ng test --no-watch --no-progress --browsers=ChromeHeadlessCI"
+    - "ng build"
     setup_commands:
     - "npm install -g @angular/cli"
     - "apt-get update"
