@@ -23,6 +23,8 @@ import { jsPDF } from "jspdf";
   styleUrl: './orgchart-component.component.scss'
 })
 
+// https://github.com/bumbeishvili/org-chart?tab=readme-ov-file
+
 export class OrgchartComponentComponent implements OnInit, OnChanges, AfterViewInit {
   @ViewChild('chartContainer')
   chartContainer!: ElementRef;
