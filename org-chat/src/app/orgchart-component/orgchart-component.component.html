@@ -1,0 +1,27 @@
+<div>
+    <!-- Buttons to control the chart -->
+    <button id="expandAllBtn" (click)="expandAll()">Expand</button>
+    <button id="collapseAllBtn" (click)="collapseAll()">Collapse</button>
+    <button id="exportPDF" (click)="exportPDF()">Export PDF</button>
+    <button id="exportSVG" (click)="exportSvg()">Export SVG</button>
+    <button id="exportImage" (click)="exportImg()">Export Image</button>
+    <button id="zoomin" (click)="zoomIn()">Zoom in</button>
+    <button id="zoomout" (click)="zoomOut()">Zoom out</button>
+    <button id="fit" (click)="fit()">Fit to the screen</button>
+
+    <!-- Buttons to control the layout of the chart -->
+    <button (click)="setLayoutRight()">Right</button>
+    <button (click)="setLayoutTop()">Top</button>
+    <button (click)="setLayoutLeft()">Left</button>
+    <button (click)="setLayoutBottom()">Bottom</button>
+
+    <button (click)="horizontal()">Horizontal</button>
+    <button (click)="compact()">Compact</button>
+
+
+    <!-- Input field to search by name -->
+    <input type="search" placeholder="Search by name" (input)="filterChart($event)" />
+
+    <!-- Container to hold the chart -->
+    <div #chartContainer id="chartContainer" class="chart-container"></div>
+</div>
